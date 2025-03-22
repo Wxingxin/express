@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');  // 导入 jsonwebtoken
 
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // 连接 MongoDB
 mongoose.connect('mongodb://localhost:27017/express-demo')
